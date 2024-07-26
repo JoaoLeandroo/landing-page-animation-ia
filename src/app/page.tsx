@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <ContainerBar>
-        <section className="w-full relative h-[600px]">
+        <section className="w-full relative h-[400px] md:h-[600px]">
           <div className="w-full text-center p-3 mt-10 flex items-center justify-center flex-col">
             <h1 className="text-3xl font-extrabold drop-shadow">
               Experience the Future of Image
@@ -18,10 +18,10 @@ export default function Home() {
               today!
             </p>
 
-            <div className="mt-4 relative border border-white rounded-3xl p-1 bg-zinc-300/60">
+            <div className="mt-4 relative border-2 border-zinc-200/80 rounded-3xl p-1 bg-zinc-300/60">
               <input 
                 type="text" 
-                className="w-[400px] h-11 pr-28 pl-4 placeholder:text-zinc-600 placeholder:font-medium text-zinc-700 rounded-3xl shadow bg-zinc-300/60 outline-none"
+                className="w-[400px] h-11 pr-28 pl-4 placeholder:text-zinc-600 placeholder:font-medium text-zinc-700 rounded-3xl shadow bg-transparent outline-none"
                 placeholder="Create Your Idea"/>
               <button className="bg-pink-400 h-11 px-3 hover:opacity-75 transition duration-200 shadow rounded-3xl absolute top-1 right-1">Generate</button>
             </div>
@@ -46,7 +46,7 @@ export default function Home() {
               className="w-full"
             />
           </div>
-          <div className="border-4 opacity-75 md:opacity-100 border-red-950 w-[170px] h-[170px] -rotate-[25deg] rounded-lg overflow-hidden select-none shadow-xl absolute -z-10 top-52 md:top-20 right-3">
+          <div className="border-4 opacity-75 md:opacity-100 border-red-950 w-[170px] h-[170px] -rotate-[25deg] rounded-lg overflow-hidden select-none shadow-xl absolute -z-10 top-0 md:top-20 right-3">
             <Image
               src={"/assets/simba.jpeg"}
               width={170}
@@ -54,7 +54,7 @@ export default function Home() {
               alt="Simba - Rei Leão"
             />
           </div>
-          <div className="border-4 opacity-75 md:opacity-100 border-zinc-300 w-[140px] h-[140px] md:w-[210px] md:h-[210px] rotate-[15deg] rounded-lg overflow-hidden select-none shadow-xl absolute -z-10 right-20 bottom-20">
+          <div className="border-4 opacity-75 md:opacity-100 border-zinc-300 w-[140px] h-[140px] md:w-[210px] md:h-[210px] rotate-[15deg] rounded-lg overflow-hidden select-none shadow-xl absolute -z-10 right-20 bottom-10">
             <Image
               src={"/assets/tom.jpeg"}
               width={210}
