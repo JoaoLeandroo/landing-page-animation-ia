@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${font.className} bg-blue-700 text-white`}>
+      <body className={`${font.className} bg-blue-700 selection:bg-purple-400 text-white`}>
         <div className="min-h-screen flex flex-col">
           <NavBar/>
           <main className="flex-grow">{children}</main>
