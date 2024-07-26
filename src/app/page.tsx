@@ -66,14 +66,19 @@ export default function Home() {
         </section>
       </ContainerBar>
 
-      <section className="w-full select-none px-2 py-5 mt-11 bg-gradient-to-r from-yellow-500/85 to-pink-500/85 shadow mb-11">
+      <section className="w-full select-none relative text-center px-2 py-5 mt-11 bg-gradient-to-r from-yellow-500/85 to-pink-500/85 shadow mb-11">
+        
+        <div className="relative -top-24 z-20 select-text">
+          <h1 className="text-3xl font-bold drop-shadow-xl">Your images generated with</h1>
+          <p className="text-xl font-semibold drop-shadow-xl">In high quality</p>
+        </div>
         <div className="mx-auto flex items-center md:flex-row flex-wrap justify-center gap-10">
           <Image
             src={"/assets/homer-bender.jpeg"}
             width={300}
             height={0}
             alt="Homer e bender"
-            className="h-auto hover:animate-bounce w-[150px] md:w-[300px] bg-cover rounded-xl shadow relative md:-bottom-8"
+            className="h-auto animate-bounce w-[200px] md:w-[300px] bg-cover rounded-xl shadow relative md:-bottom-8"
           />
 
           <Image
@@ -81,7 +86,7 @@ export default function Home() {
             width={300}
             height={0}
             alt="Goku e vegeta"
-            className="h-auto hover:animate-bounce w-[150px] md:w-[300px] bg-cover rounded-xl shadow relative md:bottom-14"
+            className="h-auto animate-bounce w-[200px] md:w-[300px] bg-cover rounded-xl shadow relative md:bottom-14"
           />
 
           <Image
@@ -89,7 +94,7 @@ export default function Home() {
             width={300}
             height={0}
             alt="Poo Kong fu Panda"
-            className="h-auto hover:animate-bounce w-[150px] md:w-[300px] bg-cover rounded-xl shadow relative md:-bottom-8"
+            className="h-auto animate-bounce  w-[200px] md:w-[300px] bg-cover rounded-xl shadow relative md:-bottom-8"
           />
 
           <Image
@@ -97,21 +102,17 @@ export default function Home() {
             width={300}
             height={0}
             alt="Tom e Jerry"
-            className="h-auto hover:animate-bounce w-[150px] md:w-[300px] bg-cover rounded-xl shadow relative md:bottom-14"
+            className="h-auto animate-bounce w-[200px] md:w-[300px] bg-cover rounded-xl shadow relative md:bottom-14"
           />
 
         </div>
       </section>
 
       <ContainerBar>
-        <section className="w-full flex items-center justify-center">
-          <Image
-            src={"/assets/astronauta.jpg"}
-            width={1000}
-            height={0}
-            alt="Astronauta"
-            className="h-auto bg-cover rounded"
-          />
+        <section className="w-full flex items-center justify-center mt-4">
+          <div>
+            <h3></h3>
+          </div>
         </section>
       </ContainerBar>
     </div>
